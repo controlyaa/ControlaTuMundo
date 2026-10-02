@@ -700,32 +700,8 @@
   .negocio-icon { font-size: 2.8rem; margin-bottom: 10px; }
   .negocio-name { font-size: .9rem; font-weight: 600; }
 
-  /* ===== EXTRAS ===== */
-  #extras { background: rgba(13,26,53,0.85); }
-  .extras-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 48px; }
-  .extra-btn-card {
-    border-radius: 18px; padding: 36px; text-align: center;
-    text-decoration: none; display: block;
-    transition: transform .3s, box-shadow .3s;
-    position: relative; overflow: hidden;
-  }
-  .extra-btn-card::before { content:''; position:absolute;inset:0; background: linear-gradient(135deg, rgba(255,255,255,0.05), transparent); }
-  .extra-btn-card.dorado { background: linear-gradient(135deg, #3d2b05, #5a3f10); border: 2px solid var(--dorado); box-shadow: 0 0 40px rgba(200,168,75,0.2); }
-  .extra-btn-card.plateado { background: linear-gradient(135deg, #1a1f2e, #252b3d); border: 2px solid var(--plateado); box-shadow: 0 0 40px rgba(176,190,197,0.15); }
-  .extra-btn-card:hover { transform: translateY(-8px); }
-  .extra-btn-card.dorado:hover { box-shadow: 0 12px 50px rgba(200,168,75,0.4); }
-  .extra-btn-card.plateado:hover { box-shadow: 0 12px 50px rgba(176,190,197,0.3); }
-  .extra-icon { font-size: 3.5rem; margin-bottom: 16px; }
-  .extra-label { font-size: 1.2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
-  .extra-btn-card.dorado .extra-label { color: var(--dorado-light); }
-  .extra-btn-card.plateado .extra-label { color: var(--plateado); }
-  .extra-desc { font-size: .85rem; color: var(--gris-claro); line-height: 1.6; }
-  .extra-arrow { display: inline-block; margin-top: 20px; padding: 10px 24px; border-radius: 25px; font-size: .85rem; font-weight: 700; }
-  .extra-btn-card.dorado .extra-arrow { background: linear-gradient(135deg, var(--dorado), var(--dorado-light)); color: #000; }
-  .extra-btn-card.plateado .extra-arrow { background: linear-gradient(135deg, var(--plateado), #eceff1); color: #000; }
-
   /* ===== BLOG ===== */
-  #blog { background: rgba(10,15,30,0.88); }
+  #blog { background: rgba(13,26,53,0.85); }
   .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
   .blog-card { background: var(--azul-card); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; overflow: hidden; transition: transform .3s; }
   .blog-card:hover { transform: translateY(-6px); }
@@ -737,7 +713,7 @@
   .blog-link { display: inline-block; margin-top: 14px; color: var(--verde); text-decoration: none; font-size: .85rem; font-weight: 600; }
 
   /* ===== CONTACTO ===== */
-  #contacto { background: rgba(13,26,53,0.85); }
+  #contacto { background: rgba(10,15,30,0.88); }
   .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
   .contact-info h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; }
   .contact-item { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; color: var(--gris-claro); }
@@ -758,7 +734,7 @@
   .map-wrap { border-radius: 16px; overflow: hidden; border: 1px solid rgba(0,230,118,0.2); box-shadow: 0 0 30px rgba(0,230,118,0.1); margin-top: 20px; }
 
   /* ===== COMENTARIOS ===== */
-  #comentarios { background: rgba(10,15,30,0.88); }
+  #comentarios { background: rgba(13,26,53,0.85); }
   .comment-form {
     max-width: 700px;
     background: var(--azul-card);
@@ -863,7 +839,6 @@
     .hero-visual { order: -1; }
     .hero-nb { max-width: 280px; }
     .contact-wrap { grid-template-columns: 1fr; }
-    .extras-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
     .nav-links { display: none; }
     .nav-links.open { display: flex; flex-direction: column; position: absolute; top:70px; left:0; right:0; background: rgba(10,15,30,0.98); padding: 20px 5%; gap: 16px; }
@@ -1361,29 +1336,6 @@
   </div>
 </section>
 
-<!-- ===== EXTRAS ===== -->
-<section id="extras" style="display:none">
-  <div class="container">
-    <div class="section-tag">Servicios adicionales</div>
-    <h2 class="section-title">También <span style="color:var(--verde)">Trabajamos con</span></h2>
-    <p class="section-sub">Más servicios para el hogar y el negocio:</p>
-    <div class="extras-grid">
-      <a href="https://controlyaa.github.io/CortenCamara/" target="_blank" class="extra-btn-card dorado">
-        <div class="extra-icon">📷</div>
-        <div class="extra-label">📹 Instalación de Cámaras de Seguridad</div>
-        <div class="extra-desc">Protegé tu negocio, local o casa con sistemas de videovigilancia profesional. Acceso remoto desde tu celular, grabación HD, y soporte técnico incluido.</div>
-        <span class="extra-arrow">Ver más →</span>
-      </a>
-      <a href="https://controlyaa.github.io/controlatumundo/" target="_blank" class="extra-btn-card plateado">
-        <div class="extra-icon">📡</div>
-        <div class="extra-label">🎮 Venta de Controles Remotos</div>
-        <div class="extra-desc">Controles remotos universales y originales para TV, aire acondicionado, proyectores y más. Entrega rápida, precios imbatibles y asesoramiento personalizado.</div>
-        <span class="extra-arrow">Ver más →</span>
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- ===== BLOG ===== -->
 <section id="blog" style="display:none">
   <div class="container">
@@ -1548,7 +1500,7 @@ createParticles();
 function enterSite(){
   document.getElementById('splash').classList.add('hide');
   document.getElementById('splash-bg').classList.add('hide');
-  const els = ['navbar','hero','servicios','precios','ejemplos','negocios','extras','blog','contacto','comentarios','footer'];
+  const els = ['navbar','hero','servicios','precios','ejemplos','negocios','blog','contacto','comentarios','footer'];
   els.forEach((id,i)=>{
     const el = document.getElementById(id);
     if(el){
